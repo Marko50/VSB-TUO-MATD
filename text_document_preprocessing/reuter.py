@@ -7,7 +7,7 @@ def preprocess_reuter(text):
     BODY_BEGIN = "<BODY>"
     BODY_END = "</BODY>"
 
-    #import pudb; pudb.set_trace() len(TITLE_BEGIN)
+    # import pudb; pudb.set_trace()
     while True:
         begin_title = text.find(TITLE_BEGIN)
         if begin_title == -1:
