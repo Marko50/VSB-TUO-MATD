@@ -1,7 +1,5 @@
 import glob
 import os
-from main_query import rebuild_expression
-from query_parser import QueryParser
 
 
 def list_of_tokens(file_name):
@@ -11,7 +9,7 @@ def list_of_tokens(file_name):
 
 
 def inverted_index():
-    path_name = os.path.dirname(os.path.abspath(__file__)) + "/output/"
+    path_name = os.path.dirname(os.path.abspath(__file__)) + "/../output/"
     files = [f for f in glob.glob(path_name + "*.txt", recursive=False)]
 
     dictionary = dict()
@@ -30,12 +28,3 @@ def append_dictionary(dictionary, file):
             dictionary[token] = [file]
 
     return dictionary
-
-
-d = inverted_index()
-parser = QueryParser("(japan AND zambia) OR western")
-tree = parser.parse()
-query, files = rebuild_expression(tree,d)
-
-for file in files:
-    print(file)

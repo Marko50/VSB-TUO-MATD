@@ -1,7 +1,7 @@
-from query_parser import QueryParser
-from query_keyword import QueryKeyword
-from node import Node
-from tree_search import TreeSearch
+from .query_parser import QueryParser
+from .query_keyword import QueryKeyword
+from .node import Node
+from .tree_search import TreeSearch
 
 def rebuild_expression(tree, inverted_index):
     stack = []
@@ -44,15 +44,3 @@ def rebuild_expression(tree, inverted_index):
     tree_search = TreeSearch(tree)
     tree_search.depth_first(tree_search_callback)
     return (stack.pop()),(expression_stack.pop())
-
-
-# try:            print(first + " NOT " + second)
-#     parser = QueryParser(query)
-#     tree = parser.parse()
-#     print("Original Query:")
-#     print(query)
-#     print("Rebuilt Query:")
-#     expression = rebuild_expression(tree)
-#     print(expression)
-# except Exception as e:
-#     print(e)

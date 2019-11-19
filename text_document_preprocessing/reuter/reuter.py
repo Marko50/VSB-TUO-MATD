@@ -1,5 +1,5 @@
-from io_text import write_text
-from preprocess_text import preprocess_text
+from io_auxiliar.io_text import write_text
+from text_preprocessement.preprocess_text import preprocess_text
 
 def preprocess_reuter(text):
     TITLE_BEGIN = "<TITLE>"

@@ -1,4 +1,4 @@
-from porter import PorterStemmer
+from .porter import PorterStemmer
 import re
 
 

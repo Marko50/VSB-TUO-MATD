@@ -1,5 +1,5 @@
-from node import Node
-from query_keyword import QueryKeyword
+from .node import Node
+from .query_keyword import QueryKeyword
 
 
 class QueryParser(object):
