@@ -19,3 +19,16 @@ Search for specific words in a 50MB(for instance) file using different algorithm
 ## Approximate Pattern Matching
 
 Using an **NFA** to compare if two words are approximate the same. Usage: `python nfa.py cenas cenaaas 2`
+
+## Text Document Preprocessing
+Creating and information retrieval system. Both the Vector Model exercises were not implemented.
+It include:
+
+1. **Text Preprocessing**
+2. **Inverted Index**
+3. **Index Compression**
+4. **Query System**
+
+Usage: `python main.py reuters/reut2-000.sgm stock AND impact`
+
+ 

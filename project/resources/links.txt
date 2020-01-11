@@ -1,0 +1,3 @@
+https://towardsdatascience.com/natural-language-processing-from-basics-to-using-rnn-and-lstm-ef6779e4ae66
+https://medium.com/@datamonsters/artificial-neural-networks-for-natural-language-processing-part-1-64ca9ebfa3b2
+https://towardsdatascience.com/recurrent-neural-networks-and-natural-language-processing-73af640c2aa1

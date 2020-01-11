@@ -20,8 +20,6 @@ def preprocess_reuter(text):
         output_text(title, body)
         text = text[(end_body + len(BODY_END)):len(text)]
 
-
-
 def extract_text(text, begin, end):
     return text[begin:end]
 
