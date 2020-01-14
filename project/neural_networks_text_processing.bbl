@@ -9,4 +9,9 @@ C{\'\i}cero dos Santos and Ma{\'\i}ra Gatti.
   Dublin, Ireland, August 2014. Dublin City University and Association for
   Computational Linguistics.
 
+\bibitem{rnn-lu}
+Keishen Yao, Geoffrey Zweig, Mei-Yuh Hwang, Yangyang Shi, and Dong Yu.
+\newblock Recurrent neural networks for language understanding.
+\newblock 2013.
+
 \end{thebibliography}

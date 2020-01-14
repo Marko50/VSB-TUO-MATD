@@ -3,44 +3,46 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: neural_networks_text_processing.aux
 The style file: plain.bst
 Database file #1: neural_networks_text_processing.bib
-You've used 1 entry,
+Warning--empty journal in rnn-lu
+You've used 2 entries,
             2118 wiz_defined-function locations,
-            504 strings with 4381 characters,
-and the built_in function-call counts, 448 in all, are:
-= -- 48
-> -- 13
+            508 strings with 4521 characters,
+and the built_in function-call counts, 780 in all, are:
+= -- 76
+> -- 41
 < -- 1
-+ -- 5
-- -- 4
-* -- 28
-:= -- 71
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 5
++ -- 16
+- -- 14
+* -- 53
+:= -- 133
+add.period$ -- 7
+call.type$ -- 2
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 21
-empty$ -- 37
-format.name$ -- 4
-if$ -- 101
+cite$ -- 3
+duplicate$ -- 31
+empty$ -- 54
+format.name$ -- 14
+if$ -- 163
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 7
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 17
 preamble$ -- 1
-purify$ -- 4
+purify$ -- 11
 quote$ -- 0
-skip$ -- 16
+skip$ -- 23
 stack$ -- 0
-substring$ -- 29
+substring$ -- 34
 swap$ -- 8
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 5
-width$ -- 2
-write$ -- 15
+type$ -- 8
+warning$ -- 1
+while$ -- 7
+width$ -- 3
+write$ -- 24
+(There was 1 warning)
