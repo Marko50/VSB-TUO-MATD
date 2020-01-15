@@ -171,6 +171,8 @@ INPUT ./images/elman.png
 INPUT /home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/./images/lstmnn.png
 INPUT ./images/lstmnn.png
 INPUT ./images/lstmnn.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT /home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.bbl
 INPUT /home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.bbl
 INPUT /home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.aux
@@ -188,4 +190,5 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

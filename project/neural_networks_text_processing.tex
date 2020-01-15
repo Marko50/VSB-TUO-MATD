@@ -112,7 +112,7 @@
     base model and start representing each feature as a \textbf{dense vector}. 
     Each feature is \textbf{embedded} into a dimensional space, and represented as a vector in 
     that space, and is treated as a model parameter which needs to be trained together 
-    with other components of the network.
+    with other components of the network \cite{nn-nlp}.
     One benefit of using dense and low-dimensional vectors is computational since
     the majority of neural network toolkits do not play well with very high-dimensional, sparse  
     vectors. The other benefit of the dense representations is in generalization power because 
@@ -310,7 +310,7 @@
     \newpage
     \subsubsection{Long Short-Term Memory Neural Networks}
     LSTM's are a type of RNN architecture with four layers, the \textbf{cell}, 
-    the \textbf{input gate}, the \textbf{output game}, and the \textbf{forget game}.
+    the \textbf{input gate}, the \textbf{output gate}, and the \textbf{forget gate}.
     The cell remembers values over arbitrary time intervals and the three 
     gates regulate the flow of information into and out of the cell. 
     \begin{itemize}
@@ -324,7 +324,63 @@
         \includegraphics[scale=0.2]{lstmnn.png}
         \caption{A representation of a LSTM}
     \end{figure}
-    
+    In \textit{"Long Short-Term Memory Neural Networks for Chinese Word Segmentation"} 
+    \cite{chen-etal-2015-long}, there is a pratical application of the use of 
+    LSTM's for an NLP task. It is a natural choice to apply LSTM neural networks 
+    to word segmentation task since the LSTM's can learn from data with long range temporal 
+    dependencies due to the considerable time lag between the inputs and their 
+    corresponding outputs.
+    \textbf{Word segmentation} is fundamental for the chinese language processing, and the authors
+    propose a LSTM to tackle this problem.
+    Their proposal architecture contains a first layer responsible for character embeddings:
+    Considering the character dictionary as \textit{C} of size $|C|$, each character
+    $c \in C$ is represented as a real sized vector $v_c \in \mathbb{R}^d$, where \textit{d}
+    is the dimensionality of the vector space. These character embeddings are stacked into 
+    the embedding matrix, $M \in \mathbb{R}^{d \times |C|}$ , and they are retrieved via a 
+    lookup table layer. 
+    \newpage
+    Their LSTM's memory cell, \textit{c}, encodes memory at every time step of whatever inputs
+    have been observed up to the step and its behavior is controlled by the three LSTM's 
+    architectural gates mentioned above, \textit{i}, \textit{f}, \textit{o}.
+    Definition of the gates and cell updates:
+    \begin{align*}
+        \sigma(x) &= (1 + e^{-x})^-1 \\
+        \Phi(x) &= \frac{e^x - e^{-x}}{e^x + e^{-x}} \\
+        i(t) &= \sigma(W_{ix}x(t) + W_{ih}h(t-1) + W_{ic}c(t-1)) \\
+        c(t) &= f(t)c(t-1) + i(t)\Phi(W_{cx}x(t) + W_{ch}h(t-1)) \\
+        o(t) &= \sigma(W_{ox}x(t) + W_{oh}h(t-1) + W_{oc}c(t)) \\
+        h(t) &= o(t)\Phi(c(t))
+    \end{align*}
+    They also propose 4 more slightly different LSTM architectures, \textit{LSTM-1},
+    \textit{LSTM-2}, \textit{LSTM-3}, \textit{LSTM-4}, that differ on the number of layers
+    and are not covered here on this report.
+    Their LSTM is trained using the \textbf{Max-Margin criterion}. For a given sentence $x_i$, 
+    $Y(x_i)$ is the set of all possible tag sequences and the correct tag sequence is $y_i$.
+    For a given training instance $(x_i, y_i)$ the predicted tag sequence $\hat{y_i} \in Y(x_i)$
+    is:
+    \begin{equation}
+        \hat{y_i} = arg max s(x_i, y, \theta)
+    \end{equation}
+    Here, \textit{s} is related to the \textbf{sentence level score}:
+    The structured margin loss would be:
+    \begin{equation}
+        \Delta(y_i, \hat{y}) = \sum_t^n \rho \textbf{1} \left\{ y_i(t) \neq \hat{y}(t) \right\}
+    \end{equation}
+    Then giving a training set \textit{D}, the regularized objective function is:
+    \begin{align*}
+        J(\theta) &= \frac{1}{\textit{D}} \sum_{(x_i,y_i) \in \textit{D}} + l_i(\theta) + \frac{\lambda}{2} \lvert \lvert \theta \rvert \rvert \\
+        l_i(\theta) &= max(0, s(x_i, \hat{y_i}, \theta) + \Delta(y_i, \hat{y_i}) - s(x_i, y_i, \theta))
+    \end{align*}
+    $\theta$ is the parameter set.
+    In order to, minimize $J(\theta)$, they use the \textbf{subgradient} method:
+    \begin{equation}
+        \theta_{t,i} = \theta_{t-1, i} - \frac{\alpha}{\sqrt{\sum^t_{r=1} g^2_{r,i}}g_{t,i}}
+    \end{equation}
+    $\alpha$ is the initial learning rate, and $g_x$ is the subgradient at time step \textit{x}.
+
+    \newpage
+    \section{Conclusions}
+    Contrasting with the old use of machine learning methods, with 
     \newpage
     \medskip
     \bibliography{neural_networks_text_processing}

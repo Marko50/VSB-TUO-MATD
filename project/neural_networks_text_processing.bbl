@@ -1,5 +1,13 @@
 \begin{thebibliography}{1}
 
+\bibitem{chen-etal-2015-long}
+Xinchi Chen, Xipeng Qiu, Chenxi Zhu, Pengfei Liu, and Xuanjing Huang.
+\newblock Long short-term memory neural networks for {C}hinese word
+  segmentation.
+\newblock In {\em Proceedings of the 2015 Conference on Empirical Methods in
+  Natural Language Processing}, pages 1197--1206, Lisbon, Portugal, September
+  2015. Association for Computational Linguistics.
+
 \bibitem{dos-santos-gatti-2014-deep}
 C{\'\i}cero dos Santos and Ma{\'\i}ra Gatti.
 \newblock Deep convolutional neural networks for sentiment analysis of short
@@ -9,9 +17,12 @@ C{\'\i}cero dos Santos and Ma{\'\i}ra Gatti.
   Dublin, Ireland, August 2014. Dublin City University and Association for
   Computational Linguistics.
 
+\bibitem{nn-nlp}
+Yoav Goldberg.
+\newblock A primer on neural network models for natural language processing.
+
 \bibitem{rnn-lu}
 Keishen Yao, Geoffrey Zweig, Mei-Yuh Hwang, Yangyang Shi, and Dong Yu.
 \newblock Recurrent neural networks for language understanding.
-\newblock 2013.
 
 \end{thebibliography}

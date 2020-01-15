@@ -6,3 +6,4 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Convolutional Neural Networks}{6}{subsubsection.3.1.2}% 
 \contentsline {subsection}{\numberline {3.2}Recurrent Neural Networks}{7}{subsection.3.2}% 
 \contentsline {subsubsection}{\numberline {3.2.1}Long Short-Term Memory Neural Networks}{9}{subsubsection.3.2.1}% 
+\contentsline {section}{\numberline {4}Conclusions}{11}{section.4}% 

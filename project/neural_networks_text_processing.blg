@@ -3,46 +3,49 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: neural_networks_text_processing.aux
 The style file: plain.bst
 Database file #1: neural_networks_text_processing.bib
+Warning--empty journal in nn-nlp
+Warning--empty year in nn-nlp
 Warning--empty journal in rnn-lu
-You've used 2 entries,
+Warning--empty year in rnn-lu
+You've used 4 entries,
             2118 wiz_defined-function locations,
-            508 strings with 4521 characters,
-and the built_in function-call counts, 780 in all, are:
-= -- 76
-> -- 41
-< -- 1
-+ -- 16
-- -- 14
-* -- 53
-:= -- 133
-add.period$ -- 7
-call.type$ -- 2
-change.case$ -- 13
+            518 strings with 4929 characters,
+and the built_in function-call counts, 1574 in all, are:
+= -- 155
+> -- 76
+< -- 2
++ -- 31
+- -- 26
+* -- 110
+:= -- 253
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 31
-empty$ -- 54
-format.name$ -- 14
-if$ -- 163
+cite$ -- 8
+duplicate$ -- 66
+empty$ -- 113
+format.name$ -- 26
+if$ -- 334
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 17
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 21
+num.names$ -- 8
+pop$ -- 37
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 21
 quote$ -- 0
-skip$ -- 23
+skip$ -- 49
 stack$ -- 0
-substring$ -- 34
-swap$ -- 8
-text.length$ -- 1
+substring$ -- 85
+swap$ -- 20
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
-warning$ -- 1
-while$ -- 7
-width$ -- 3
-write$ -- 24
-(There was 1 warning)
+type$ -- 16
+warning$ -- 4
+while$ -- 14
+width$ -- 5
+write$ -- 42
+(There were 4 warnings)
