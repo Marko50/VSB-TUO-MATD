@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex neural_networks_text_processing"] 1579099601 "neural_networks_text_processing.aux" "neural_networks_text_processing.bbl" "neural_networks_text_processing" 1579099692
+["bibtex neural_networks_text_processing"] 1579100778 "neural_networks_text_processing.aux" "neural_networks_text_processing.bbl" "neural_networks_text_processing" 1579101199
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1572595918 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "neural_networks_text_processing.aux" 1579099692 4434 a69d759c43282ca2e3ec0ad04f43ba5f "pdflatex"
+  "neural_networks_text_processing.aux" 1579101198 4434 d3083559d2e806f0d65de4f91bad2e8d "pdflatex"
   "neural_networks_text_processing.bib" 1579096008 1663 5ebdfb4817a4a9babf427ab868570e16 ""
   (generated)
-  "neural_networks_text_processing.blg"
   "neural_networks_text_processing.bbl"
-["pdflatex"] 1579099691 "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.tex" "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.pdf" "neural_networks_text_processing" 1579099692
-  "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.aux" 1579099692 4434 a69d759c43282ca2e3ec0ad04f43ba5f ""
-  "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.tex" 1579099690 23411 99468840bf6ab4835ba5efb6c41587fe ""
+  "neural_networks_text_processing.blg"
+["pdflatex"] 1579101196 "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.tex" "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.pdf" "neural_networks_text_processing" 1579101199
+  "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.aux" 1579101198 4434 d3083559d2e806f0d65de4f91bad2e8d ""
+  "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.tex" 1579101196 23557 99c5d3d843c32d825d69b2468acf998e ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1572595918 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1572595918 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -106,16 +106,16 @@
   "images/lstmnn.png" 1579024416 99915 641c8743991ea0f27834dd5549135358 ""
   "images/mlp.png" 1578930719 152788 b640ef6ca65e80f523f506bcfece6e98 ""
   "images/rnn.png" 1578999526 39387 69143c74d880a641d8052ae4402d48d2 ""
-  "neural_networks_text_processing.aux" 1579099692 4434 a69d759c43282ca2e3ec0ad04f43ba5f "pdflatex"
-  "neural_networks_text_processing.bbl" 1579099602 1124 b400d74ebda3ccaa13e2c7faa71508b5 "bibtex neural_networks_text_processing"
-  "neural_networks_text_processing.out" 1579099691 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "neural_networks_text_processing.tex" 1579099690 23411 99468840bf6ab4835ba5efb6c41587fe ""
-  "neural_networks_text_processing.toc" 1579099692 811 c46358bb394243a7eeb94a4b52787165 "pdflatex"
+  "neural_networks_text_processing.aux" 1579101198 4434 d3083559d2e806f0d65de4f91bad2e8d "pdflatex"
+  "neural_networks_text_processing.bbl" 1579100778 1124 b400d74ebda3ccaa13e2c7faa71508b5 "bibtex neural_networks_text_processing"
+  "neural_networks_text_processing.out" 1579101197 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "neural_networks_text_processing.tex" 1579101196 23557 99c5d3d843c32d825d69b2468acf998e ""
+  "neural_networks_text_processing.toc" 1579101198 811 c46358bb394243a7eeb94a4b52787165 "pdflatex"
   (generated)
   "neural_networks_text_processing.aux"
-  "neural_networks_text_processing.out"
   "neural_networks_text_processing.log"
-  "neural_networks_text_processing.toc"
   "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.log"
-  "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.pdf"
   "neural_networks_text_processing.pdf"
+  "/home/andre/Documents/VSB-TUO/VSB-TUO-MATD/project/neural_networks_text_processing.pdf"
+  "neural_networks_text_processing.out"
+  "neural_networks_text_processing.toc"

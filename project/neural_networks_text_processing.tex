@@ -30,13 +30,13 @@
     with numerous modern applications such as grammar and spell checking, text completion,
     plagiarism detection or even chat bots. Thus, the theory behind text processing techniques
     requires a lot of \textbf{algorithmic} and \textbf{data structure} knowledge. \newline
-    These techniques allow the development of artificial intelligence applications and with
+    These techniques allow the development of artificial intelligence applications and
     normally have to deal with large quantities of strings when analyzing textual documents
     for their different uses. \newline
     One very specific use case of textual analysis is \textbf{Natural Language Processing} 
     which is the one of the two main topics of this document. \newline
-    \textbf{Natural Language Processing} is an artificial intelligence field concerned with 
-    interactions between computers and a language and (i.e English) and the
+    Natural Language Processing is an artificial intelligence field concerned with 
+    interactions between computers and a language (i.e English) and the
     processing of textual data in that language so that the machine can make
     conclusions about that document. \newline
     In order to understand a document written in some language a computer program must first
@@ -56,8 +56,8 @@
     \end{itemize}
     In order to model a document by its content, first a meaning must be given to the words it
     contains. \newline 
-    One way of doing this calculating a \textbf{TF-IDF} value for each word on a
-    document, which can be interpreted as its weight. Another way would be calculating
+    One way of doing this is calculating a \textbf{TF-IDF} value for each word on a
+    document, which can be interpreted as its \textbf{weight}. Another way would be calculating
     \textbf{One-Hot Encodings} or \textbf{Word Embeddings} which are other ways 
     of representing words in a document.
     After these transformations the document can be represented in a certain format
@@ -70,11 +70,11 @@
     of Natural Language Processing and are the second main topic of this document. 
     \newpage
     \section{ Introduction }
-    Neural networks in the area of computer science are mostly refered to as 
+    Neural networks in the area of computer science are mostly referred to as 
     \textbf{Artificial Neural Networks} and are based on the neural structure of the brain,
     being able to learn to perform tasks such as classification and clustering. \newline
-    An ANN consists of a series of nodes, which are interpreted as artificial neurons which
-    are part of a directed and weighted graph and can be set on an input layer, 
+    An \textbf{ANN} consists of a series of nodes, which are interpreted as artificial neurons 
+    which are part of a directed and weighted graph and can be set on an input layer, 
     output layer, or on the middle hidden processing layer or layers.
     
     \begin{figure}[h!]
@@ -87,13 +87,13 @@
     which they combine with their internal state using an \textbf{activation function} and produce
     an output. The input to a neuron is the output of other neurons or simply another neuron,
     which is computed by a \textbf{propagation function}.
-    An ANN also possesses \textbf{hyperparameters} which are parameters who controll the network,
-    are set before the learning process and change according via learning. Examples of these 
+    An ANN also possesses \textbf{hyperparameters} which are parameters who control the network,
+    are set before the learning process and change accordingly via learning. Examples of these 
     parameters include the \textbf{learning rate} or the number of hidden layers and can depend
     on other hyperparameters. \newline
-    The ANN consumes a dataset, considering it as a sample observation and uses one part of 
-    the dataset(train) to be trained and to learn, varying its hyperparameters and another part 
-    (test) to check its accuracy. 
+    The ANN consumes a dataset, considering it as a group of sample observations and uses one 
+    part of  the dataset(train) to be trained and to learn, varying its hyperparameters and 
+    another part (test) to check its accuracy. 
     \textbf{Learning} involves adjusting the weights of the network 
     to decrease an error rate. Usually this \textbf{error rate} is divided among the connections and 
     \textbf{backpropagation} is used to adjust the connection weights. Backpropagation is a method
@@ -113,7 +113,7 @@
     Each feature is \textbf{embedded} into a dimensional space, and represented as a vector in 
     that space, and is treated as a model parameter which needs to be trained together 
     with other components of the network \cite{nn-nlp}.
-    One benefit of using dense and low-dimensional vectors is computational since
+    One benefit of using dense and low-dimensional vectors is computational efficiency since
     the majority of neural network toolkits do not play well with very high-dimensional, sparse  
     vectors. The other benefit of the dense representations is in generalization power because 
     as some features may provide similar clues, it is worthwhile to provide a representation that
@@ -178,7 +178,8 @@
     The outer-most linear transform results in the output layer and the other linear transforms 
     result in hidden layers. Each hidden layer is followed by a non-linear activation.
     \newpage
-    In an NLP application, \textit{x} is normally composed of embedding vectors, wether they 
+    In an NLP application, \textit{x} is normally composed of embedding vectors, 
+    wether they 
     are one-hot representations or dense representations.
     One common task in NLP is classification, and one frequently used method used in text
     classification is the multilayer perceptron.
@@ -190,6 +191,8 @@
     \newline
     First, a set of features are derived from an e-mail text, which are feeded to an input
     layer and then results from that layer are propagated into the hidden middle layers.
+    There are also cases where the first layer of the network is responsible for feature 
+    engineering.
     In this case the output layer will yield a size 2 vector with probabilities for the 
     \textit{Spam} and \textit{Not spam} classes.
     The \textbf{Softmax Layer} contains a series of neurons whose activation function is
@@ -221,12 +224,12 @@
     was mentioned. On this section we will make reference to a papper, 
     \textit{"Deep Convolutional Neural Networks for Sentiment Analysis of Short Texts"}
     \cite{dos-santos-gatti-2014-deep}, on which the authors propose a convolutional
-    neural network architecture for a NLP task which extracts sentiment analysis when analyzing
+    neural network architecture for a NLP task which extracts sentiment analysis from
     textual data.
     Their proposed deep neural network is called \textbf{CharSCNN}, 
     \textit{Character to Sentence Convolutional Neural Network}, and uses 2 convolutional layers
     to extract relevant features from words and sentences of any size. They focus their work 
-    on small textual data, such as movie reviews or Twitter messages. 
+    on small textual data, such as movie reviews or \textit{Twitter} messages. 
     Given a sentence, the network computes a score for each sentiment label. 
     In order to score a sentence, the network takes as input the sequence of words in the sentence, 
     and passes it through  a sequence of layers where features with increasing levels of 
@@ -239,12 +242,12 @@
     \textbf{character level-embedding}.
     Word-level embeddings are encoded by column vectors in an embedding matrix 
     $W^{wrd} \in \mathbb{R}^{d^{wrd} \times | V^{wrd} | }$
-    The word is transformed into irs word-level embedding by:
+    The word is transformed into its word-level embedding by:
     \begin{equation}
         r^{wrd} = W^{wrd}v^{w}
     \end{equation}
     \newpage
-    For character-level embedding, considering a word to be represented by M characters
+    For character-level embedding, considering a word to be represented by \textit{M} characters
     ${c_1, c_2, c_3, ..., c_m}$ the character embedding is:
     \begin{equation}
         r^{chr} = W^{chr}v^c
@@ -325,9 +328,9 @@
         \caption{A representation of a LSTM}
     \end{figure}
     In \textit{"Long Short-Term Memory Neural Networks for Chinese Word Segmentation"} 
-    \cite{chen-etal-2015-long}, there is a pratical application of the use of 
+    \cite{chen-etal-2015-long}, there is a practical application of the use of 
     LSTM's for an NLP task. It is a natural choice to apply LSTM neural networks 
-    to word segmentation task since the LSTM's can learn from data with long range temporal 
+    to word segmentation tasks since LSTM's can learn from data with long range temporal 
     dependencies due to the considerable time lag between the inputs and their 
     corresponding outputs.
     \textbf{Word segmentation} is fundamental for the chinese language processing, and the authors
