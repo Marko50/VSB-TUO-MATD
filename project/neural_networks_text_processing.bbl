@@ -1,5 +1,13 @@
 \begin{thebibliography}{1}
 
+\bibitem{botha-etal-2017-natural}
+Jan~A. Botha, Emily Pitler, Ji~Ma, Anton Bakalov, Alex Salcianu, David Weiss,
+  Ryan McDonald, and Slav Petrov.
+\newblock Natural language processing with small feed-forward networks.
+\newblock In {\em Proceedings of the 2017 Conference on Empirical Methods in
+  Natural Language Processing}, pages 2879--2885, Copenhagen, Denmark,
+  September 2017. Association for Computational Linguistics.
+
 \bibitem{chen-etal-2015-long}
 Xinchi Chen, Xipeng Qiu, Chenxi Zhu, Pengfei Liu, and Xuanjing Huang.
 \newblock Long short-term memory neural networks for {C}hinese word
